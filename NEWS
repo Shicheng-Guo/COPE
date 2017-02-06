@@ -1,0 +1,42 @@
+version v1.2.5 Oct 30th 2013
+-------------------------------------------
+1. Fixed the bug in function "get_mis_table" which will lead to overflow of pointer.
+
+version v1.2.4 May 16th 2013
+-------------------------------------------
+1. Add option -g to choose algorithm for simple connect.
+2. Improved the align method to speed up connection in mode 1.
+3. Change the default value of option -m to be 0(simple mode).
+
+version v1.2.1 Apr 1th 2013
+-------------------------------------------
+1. Fixed the bug in connected id output.
+2. Fixed some bugs in getting candidate overlap function.
+3. Removed option -2 -3 and changed option -o to set prefix of output file.
+
+version v1.2.0 Mar 27th 2013
+-------------------------------------------
+1. add option : -I expect insert size -U max trim size
+  -I use the insert size and read length to calculate the 100-170, 100-150, 150-250, or 250-450 mode.
+  -U to trim the tail of read1 and read2 by quality.
+2. Improved the align method to speed up connection.
+3. Fixed some bugs in connect function.
+
+version v1.1.3 Oct 11th 2012
+-------------------------------------------
+1. changed the format of connected id.
+
+version v1.1.2 Sep 17th 2012
+-------------------------------------------
+1.add option -D -M -H -F -K -R for cross reads, to get the usage of these option, 
+  please read README.
+2.add length information of reads in output file: pair.kmer.list.gz , new format: 
+  "pair_id kmer1 read1_len pos1 kmer2 read2_len pos2".
+3.fixed some bugs in output cross information.
+4.fixed some bugs in connecting reads with Kmer frequency.
+5.renamed program to "cope".
+
+version v1.0.0 Apr 16th 2012
+-------------------------------------------
+This is the first published version.
+
